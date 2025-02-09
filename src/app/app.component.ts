@@ -1,11 +1,20 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { LandingPageComponent } from './landingPage/landingpage.component';
+import { MainContentComponent } from './main-content/main-content.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { ImprintComponent } from './imprint/imprint.component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, RouterOutlet, LandingPageComponent],
+  imports: [
+    CommonModule, 
+    RouterOutlet, 
+    MainContentComponent,
+    FooterComponent,
+    ImprintComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
